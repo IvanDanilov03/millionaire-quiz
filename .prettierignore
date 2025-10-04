@@ -1,0 +1,11 @@
+/node_modules
+package-lock.json
+
+/public
+/out
+/.next
+/next-env.d.ts
+/next-i18next.config.js
+/next.config.js
+
+/coverage
