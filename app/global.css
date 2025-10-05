@@ -14,7 +14,26 @@
 
   --black-100: #1c1c21;
   --black-40: #d0d0d8;
+  --black-15: #f0f0f5;
   --black-5: #f5f5f7;
 
   --white-100: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--black-5);
+  color: var(--black-100);
 }
