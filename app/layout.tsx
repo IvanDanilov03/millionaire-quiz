@@ -1,11 +1,11 @@
 import React from 'react';
-import "./global.css";
+import './global.css';
 
-const RootLayout = async ({
-  children,
-}: Readonly<{
+type RootLayoutProps = Readonly<{
   children: React.ReactNode;
-}>) => {
+}>;
+
+const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
       <head>
@@ -20,7 +20,7 @@ const RootLayout = async ({
           rel="stylesheet"
         />
       </head>
-      <body style={{ margin: 0 }}>
+      <body>
         <main>{children}</main>
       </body>
     </html>
