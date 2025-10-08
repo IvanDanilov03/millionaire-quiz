@@ -1,0 +1,98 @@
+.root {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  gap: 24px;
+  padding: 40px 16px;
+  background: linear-gradient(
+    to bottom right,
+    var(--white-100) 0% 50%,
+    var(--orange-5) 50% 100%
+  );
+}
+
+.imageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-grow: 1;
+  padding: 18px 45px;
+}
+
+.imageWrapper {
+  position: relative;
+  min-width: 196px;
+  min-height: 155px;
+}
+
+.content {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.button {
+  width: 100%;
+  max-width: 300px;
+  align-self: stretch;
+  margin: auto auto 0;
+}
+
+@media (min-width: 744px) {
+  .button {
+    max-width: 426px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .root {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 0 80px 75px;
+  }
+
+  .imageContainer {
+    flex: 1;
+    width: calc(50% - 16px);
+    min-width: calc(50% - 16px);
+    padding: 5px 87px;
+  }
+
+  .imageWrapper {
+    width: 451px;
+    height: 356px;
+    min-width: 451px;
+    min-height: 356px;
+    max-width: 451px;
+    max-height: 356px;
+  }
+
+  .content {
+    flex: 1;
+    width: calc(50% - 16px);
+    min-width: calc(50% - 16px);
+    align-items: flex-start;
+    text-align: left;
+    gap: 64px;
+  }
+
+  .button {
+    max-width: 296px;
+    align-self: flex-start;
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
