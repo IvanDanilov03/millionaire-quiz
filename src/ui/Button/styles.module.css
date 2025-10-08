@@ -43,7 +43,7 @@
   background: var(--orange-80);
 }
 
-.variant-contained.color-primary:not(:disabled):focus   {
+.variant-contained.color-primary:not(:disabled):focus {
   background: var(--orange-120);
 }
 
