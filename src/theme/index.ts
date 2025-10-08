@@ -1,4 +1,4 @@
-const palette = {
+export const palette = {
   orange: {
     120: '#E87928',
     100: '#FF8B37',
@@ -16,6 +16,7 @@ const palette = {
   black: {
     100: '#1C1C21',
     40: '#D0D0D8',
+    15: '#F0F0F5',
     5: '#F5F5F7',
   },
   white: {
@@ -23,7 +24,7 @@ const palette = {
   },
 };
 
-const breakpoints = {
+export const breakpointValues = {
   mobile: 0,
   tablet: 744,
   laptop: 1240,
