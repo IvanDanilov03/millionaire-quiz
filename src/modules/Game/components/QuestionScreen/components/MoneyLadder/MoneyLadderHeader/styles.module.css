@@ -1,0 +1,15 @@
+.root {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.mobile {
+  padding: 16px 16px 8px;
+}
+
+.desktop {
+  padding: 0;
+}
