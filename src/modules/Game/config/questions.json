@@ -1,0 +1,134 @@
+[
+  {
+    "id": "q1",
+    "question": "Which planet is known as the Red Planet?",
+    "answers": [
+      { "id": "a", "label": "Mercury", "isCorrect": false },
+      { "id": "b", "label": "Mars", "isCorrect": true },
+      { "id": "c", "label": "Jupiter", "isCorrect": false },
+      { "id": "d", "label": "Venus", "isCorrect": false }
+    ],
+    "reward": 500
+  },
+  {
+    "id": "q2",
+    "question": "Which element has the chemical symbol 'O'?",
+    "answers": [
+      { "id": "a", "label": "Gold", "isCorrect": false },
+      { "id": "b", "label": "Oxygen", "isCorrect": true },
+      { "id": "c", "label": "Silver", "isCorrect": false },
+      { "id": "d", "label": "Osmium", "isCorrect": false }
+    ],
+    "reward": 1000
+  },
+  {
+    "id": "q3",
+    "question": "Which language is primarily spoken in Brazil?",
+    "answers": [
+      { "id": "a", "label": "Spanish", "isCorrect": false },
+      { "id": "b", "label": "Portuguese", "isCorrect": true },
+      { "id": "c", "label": "French", "isCorrect": false },
+      { "id": "d", "label": "English", "isCorrect": false }
+    ],
+    "reward": 2000
+  },
+  {
+    "id": "q4",
+    "question": "Which of these animals are mammals?",
+    "answers": [
+      { "id": "a", "label": "Dolphin", "isCorrect": true },
+      { "id": "b", "label": "Shark", "isCorrect": false },
+      { "id": "c", "label": "Bat", "isCorrect": true },
+      { "id": "d", "label": "Frog", "isCorrect": false }
+    ],
+    "reward": 4000
+  },
+  {
+    "id": "q5",
+    "question": "What is the capital city of Canada?",
+    "answers": [
+      { "id": "a", "label": "Toronto", "isCorrect": false },
+      { "id": "b", "label": "Vancouver", "isCorrect": false },
+      { "id": "c", "label": "Ottawa", "isCorrect": true },
+      { "id": "d", "label": "Montreal", "isCorrect": false }
+    ],
+    "reward": 8000
+  },
+  {
+    "id": "q6",
+    "question": "Which inventions are attributed to Nikola Tesla?",
+    "answers": [
+      { "id": "a", "label": "Alternating current system", "isCorrect": true },
+      { "id": "b", "label": "The light bulb", "isCorrect": false },
+      { "id": "c", "label": "Tesla coil", "isCorrect": true },
+      { "id": "d", "label": "Telephone", "isCorrect": false }
+    ],
+    "reward": 16000
+  },
+  {
+    "id": "q7",
+    "question": "Which ocean lies on the east coast of the United States?",
+    "answers": [
+      { "id": "a", "label": "Atlantic Ocean", "isCorrect": true },
+      { "id": "b", "label": "Pacific Ocean", "isCorrect": false },
+      { "id": "c", "label": "Indian Ocean", "isCorrect": false },
+      { "id": "d", "label": "Arctic Ocean", "isCorrect": false }
+    ],
+    "reward": 32000
+  },
+  {
+    "id": "q8",
+    "question": "Which scientists developed the theory of relativity?",
+    "answers": [
+      { "id": "a", "label": "Albert Einstein", "isCorrect": true },
+      { "id": "b", "label": "Isaac Newton", "isCorrect": false },
+      { "id": "c", "label": "Marie Curie", "isCorrect": false },
+      { "id": "d", "label": "Niels Bohr", "isCorrect": false }
+    ],
+    "reward": 64000
+  },
+  {
+    "id": "q9",
+    "question": "In computing, what does 'HTTP' stand for?",
+    "answers": [
+      { "id": "a", "label": "HyperText Transfer Protocol", "isCorrect": true },
+      { "id": "b", "label": "HighText Transmission Program", "isCorrect": false },
+      { "id": "c", "label": "HyperText Tracking Process", "isCorrect": false },
+      { "id": "d", "label": "High Transfer Text Protocol", "isCorrect": false }
+    ],
+    "reward": 125000
+  },
+  {
+    "id": "q10",
+    "question": "Which continent is the Sahara Desert located on?",
+    "answers": [
+      { "id": "a", "label": "Asia", "isCorrect": false },
+      { "id": "b", "label": "South America", "isCorrect": false },
+      { "id": "c", "label": "Africa", "isCorrect": true },
+      { "id": "d", "label": "Australia", "isCorrect": false }
+    ],
+    "reward": 250000
+  },
+  {
+    "id": "q11",
+    "question": "Which two countries share the longest international border?",
+    "answers": [
+      { "id": "a", "label": "United States and Canada", "isCorrect": true },
+      { "id": "b", "label": "Russia and China", "isCorrect": false },
+      { "id": "c", "label": "Argentina and Chile", "isCorrect": false },
+      { "id": "d", "label": "India and Bangladesh", "isCorrect": false }
+    ],
+    "reward": 500000
+  },
+  {
+    "id": "q12",
+    "question": "Which achievements are associated with NASA's Apollo program?",
+    "answers": [
+      { "id": "a", "label": "First crewed Moon landing", "isCorrect": true },
+      { "id": "b", "label": "Deployment of the Hubble Space Telescope", "isCorrect": false },
+      { "id": "c", "label": "Establishing the International Space Station", "isCorrect": false },
+      { "id": "d", "label": "Return of lunar rock samples to Earth", "isCorrect": true }
+    ],
+    "reward": 1000000
+  }
+]
