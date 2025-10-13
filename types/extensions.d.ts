@@ -1,9 +1,11 @@
-declare module '*.svg' {
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  import React = require('react');
+import type { StaticImageData } from 'next/image';
 
-  export const ReactComponent: React.FC<React.SVGProps<SVGSVGElement>>;
-  // eslint-disable-next-line unicorn/prevent-abbreviations
-  const src: string;
-  export default src;
+declare module '*.svg' {
+  const source: StaticImageData;
+  export default source;
+}
+
+declare module '*.png' {
+  const source: StaticImageData;
+  export default source;
 }
