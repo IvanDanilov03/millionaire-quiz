@@ -1,0 +1,33 @@
+.backdrop {
+  background: var(--black-5);
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0;
+}
+
+.surface {
+  background: var(--black-5);
+  box-shadow: none;
+  border-radius: 0;
+  align-self: stretch;
+  justify-self: stretch;
+  min-width: 100vw;
+  max-width: 100vw;
+  width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-height: 0;
+  padding-bottom: 32px;
+}
