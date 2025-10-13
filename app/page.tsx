@@ -1,16 +1,13 @@
 'use client';
 
-import Typography from 'components/Typography';
 import { FC } from 'react';
+
+import { Game } from 'modules/Game';
 
 export interface HomePageProps {}
 
 const HomePage: FC<HomePageProps> = () => {
-  return (
-    <section>
-      <Typography tag="h1">Home page</Typography>
-    </section>
-  );
+  return <Game />;
 };
 
 export default HomePage;
