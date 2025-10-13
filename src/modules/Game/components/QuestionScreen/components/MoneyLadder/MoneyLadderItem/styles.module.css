@@ -1,0 +1,75 @@
+.root {
+  --border-color: var(--black-40);
+  --text-color: var(--black-100);
+  --fill-color: var(--white-100);
+  --connector-width: 41px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.connector {
+  inline-size: var(--connector-width);
+  block-size: 1px;
+  background: var(--border-color);
+  flex-shrink: 0;
+}
+
+.body {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 240px;
+  min-inline-size: 240px;
+  max-inline-size: 240px;
+  block-size: 32px;
+}
+
+.surface {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+.shape {
+  fill: var(--fill-color);
+  stroke: var(--border-color);
+  stroke-width: 1px;
+}
+
+.text {
+  position: relative;
+  z-index: 1;
+  color: var(--text-color);
+}
+
+.stateCurrent {
+  --border-color: var(--orange-100);
+  --text-color: var(--orange-100);
+}
+
+.stateCompleted {
+  --border-color: var(--black-40);
+  --text-color: var(--black-40);
+}
+
+.stateLocked {
+  --border-color: var(--black-40);
+  --text-color: var(--black-100);
+}
+
+@media (min-width: 744px) {
+  .root {
+    --connector-width: 69px;
+  }
+
+  .body {
+    block-size: 40px;
+  }
+}
