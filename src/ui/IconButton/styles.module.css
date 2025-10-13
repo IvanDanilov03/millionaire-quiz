@@ -1,0 +1,40 @@
+.root {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  border: 0px;
+}
+
+.secondary {
+  border-color: transparent;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 18px 28px rgba(31, 62, 84, 0.12);
+}
+
+.secondary:hover {
+  border-color: rgba(28, 28, 33, 0.12);
+}
+
+.small {
+  width: 24px;
+  height: 24px;
+}
+
+.medium {
+  width: 36px;
+  height: 36px;
+}
+
+.large {
+  width: 44px;
+  height: 44px;
+}
+
+.root > svg,
+.root > span {
+  pointer-events: none;
+}
