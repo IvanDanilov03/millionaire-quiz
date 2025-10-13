@@ -3,7 +3,7 @@ import { FC, memo } from 'react';
 import {
   AnswerOption,
   type AnswerOptionStatus,
-} from 'modules/Game/components/QuestionScreen/components/AnswerOption';
+} from 'modules/Game/components/QuestionScreen/AnswerOption';
 import { ANSWER_LETTERS } from 'modules/Game/constants';
 
 import styles from './styles.module.css';

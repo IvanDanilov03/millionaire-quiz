@@ -2,6 +2,13 @@ import React, { FC } from 'react';
 
 import menuIcon from 'assets/icons/menu-icon.svg';
 import { useBreakpoints } from 'hooks/useBreakpoints';
+import AnswerOptionGroup from 'modules/Game/components/QuestionScreen/AnswerOptionGroup';
+import {
+  MoneyLadderStep,
+  MoneyLadderGroup,
+  MoneyLadderDrawer,
+  MoneyLadderHeader,
+} from 'modules/Game/components/QuestionScreen/MoneyLadder';
 import { getAssetUrlString } from 'modules/Game/helpers';
 import { GameQuestion } from 'modules/Game/types';
 
@@ -9,13 +16,6 @@ import { IconButton } from 'ui/IconButton';
 import { Image } from 'ui/Image';
 import { Typography } from 'ui/Typography';
 
-import {
-  AnswerOptionGroup,
-  MoneyLadderDrawer,
-  MoneyLadderGroup,
-  MoneyLadderHeader,
-  type MoneyLadderStep,
-} from './components';
 import styles from './styles.module.css';
 
 export interface QuestionScreenProps {
@@ -33,7 +33,7 @@ export interface QuestionScreenProps {
   isLadderOpen: boolean;
 }
 
-export const QuestionScreen: FC<QuestionScreenProps> = ({
+export const QuestionScreenLayout: FC<QuestionScreenProps> = ({
   question,
   selectedAnswerIds,
   correctAnswerIds,
@@ -50,7 +50,7 @@ export const QuestionScreen: FC<QuestionScreenProps> = ({
   return (
     <section className={styles.root}>
       {isMobileDevice && (
-        <header className={styles.mobileHeader}>
+        <div className={styles.mobileHeader}>
           <IconButton
             className={styles.menuButton}
             onClick={onOpenLadder}
@@ -64,7 +64,7 @@ export const QuestionScreen: FC<QuestionScreenProps> = ({
               aria-hidden
             />
           </IconButton>
-        </header>
+        </div>
       )}
 
       <div className={styles.layout}>
@@ -109,5 +109,3 @@ export const QuestionScreen: FC<QuestionScreenProps> = ({
     </section>
   );
 };
-
-export default QuestionScreen;

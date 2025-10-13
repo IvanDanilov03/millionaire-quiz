@@ -1,10 +1,10 @@
 import { FC, memo, useMemo } from 'react';
 
-import { MoneyLadderItem } from 'modules/Game/components/QuestionScreen/components/MoneyLadder/MoneyLadderItem';
+import { MoneyLadderItem } from 'modules/Game/components/QuestionScreen/MoneyLadder/MoneyLadderItem';
 import type {
   MoneyLadderStep,
   MoneyLadderVariant,
-} from 'modules/Game/components/QuestionScreen/components/MoneyLadder/types';
+} from 'modules/Game/components/QuestionScreen/MoneyLadder/types';
 import classNames from 'utils/classNames';
 
 import styles from './styles.module.css';

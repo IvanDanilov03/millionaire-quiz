@@ -1,6 +1,7 @@
 import { FC } from 'react';
 
-import closeIcon from 'assets/icons/close-icon.png';
+import closeIcon from 'assets/icons/close-icon.svg';
+import { getAssetUrlString } from 'modules/Game/helpers';
 import classNames from 'utils/classNames';
 
 import { IconButton } from 'ui/IconButton';
@@ -30,7 +31,7 @@ export const MoneyLadderHeader: FC<MoneyLadderHeaderProps> = ({
           size="small"
         >
           <Image
-            src={closeIcon.src}
+            src={getAssetUrlString(closeIcon)}
             alt=""
             width={24}
             height={24}

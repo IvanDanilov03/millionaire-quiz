@@ -1,7 +1,7 @@
 import { FC, useEffect, useState } from 'react';
 
 import { IntroScreen } from 'modules/Game/components/IntroScreen';
-import { QuestionScreen } from 'modules/Game/components/QuestionScreen';
+import { QuestionScreenLayout } from 'modules/Game/components/QuestionScreen/QuestionScreenLayout';
 import { ResultScreen } from 'modules/Game/components/ResultScreen';
 import { useGameEngine } from 'modules/Game/hooks/useGameEngine';
 import { GameStage } from 'modules/Game/types';
@@ -41,7 +41,7 @@ export const Game: FC = () => {
   }
 
   return (
-    <QuestionScreen
+    <QuestionScreenLayout
       question={currentQuestion}
       selectedAnswerIds={state.selectedAnswerIds}
       correctAnswerIds={correctAnswerIds}
