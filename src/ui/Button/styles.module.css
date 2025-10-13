@@ -36,7 +36,6 @@
 .variant-contained.color-primary {
   background: var(--orange-100);
   color: var(--white-100);
-  box-shadow: 0 12px 24px rgba(255, 139, 55, 0.35);
 }
 
 .variant-contained.color-primary:not(:disabled):hover {
