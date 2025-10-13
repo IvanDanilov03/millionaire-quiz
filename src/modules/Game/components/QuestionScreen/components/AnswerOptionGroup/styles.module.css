@@ -1,0 +1,30 @@
+.root {
+  /* Shared with AnswerOption */
+  --btn-w: 320px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 8px;
+  justify-items: center;
+
+  inline-size: 100%;
+  max-inline-size: var(--btn-w);
+  margin-inline: auto;
+}
+
+@media (min-width: 744px) {
+  .root {
+    --btn-w: 421px;
+    max-inline-size: var(--btn-w);
+  }
+}
+
+@media (min-width: 1240px) {
+  .root {
+    grid-template-columns: repeat(2, minmax(0, var(--btn-w)));
+    row-gap: 32px;
+    justify-content: start;
+    justify-items: start;
+    max-inline-size: calc(2 * var(--btn-w) + 32px);
+  }
+}
