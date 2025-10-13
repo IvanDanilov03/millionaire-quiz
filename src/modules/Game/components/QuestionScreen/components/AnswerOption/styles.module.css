@@ -1,0 +1,142 @@
+.root {
+  --border-color: rgba(208, 208, 216, 0.7);
+  --fill-color: var(--white-100);
+  --text-color: var(--black-100);
+  --accent-color: var(--orange-80);
+
+  --btn-w: 320px;
+  --btn-h: 56px;
+  --inner-w: 288px;
+  --inner-w-large: 372px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 320px;
+  min-block-size: var(--btn-h);
+
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 1.35;
+  cursor: pointer;
+
+  transition:
+    border-color 150ms ease,
+    color 150ms ease,
+    background-color 150ms ease,
+    box-shadow 150ms ease,
+    opacity 150ms ease;
+}
+
+.root:disabled {
+  cursor: default;
+  opacity: 0.9;
+}
+
+.root:not(:disabled):hover {
+  --border-color: var(--orange-100);
+}
+
+.root:not(:disabled):active {
+  --border-color: var(--orange-100);
+  --fill-color: var(--orange-5);
+}
+
+.stateSelected {
+  --border-color: var(--orange-100);
+  --fill-color: var(--orange-5);
+  --accent-color: var(--orange-100);
+}
+
+.stateCorrect {
+  --border-color: var(--green-100);
+  --fill-color: var(--green-5);
+  --accent-color: var(--green-100);
+}
+
+.stateWrong {
+  --border-color: var(--red-100);
+  --fill-color: var(--red-5);
+  --accent-color: var(--red-100);
+}
+
+.connector {
+  inline-size: 17px;
+  block-size: 1px;
+  /* width: 17px;
+  height: 1px; */
+  background: var(--border-color);
+  flex-shrink: 0;
+}
+
+.body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  inline-size: var(--inner-w);
+  min-block-size: var(--btn-h);
+
+  padding: 18px 24px;
+
+  min-inline-size: 0;
+  flex: 1 1 auto;
+}
+
+.surface {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.shape {
+  fill: var(--fill-color);
+  stroke: var(--border-color);
+  stroke-width: 1px;
+}
+
+.content {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  inline-size: 100%;
+  gap: 8px;
+  z-index: 1;
+}
+
+.label {
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+.text {
+  color: var(--text-color);
+  word-break: break-word;
+}
+
+@media (min-width: 744px) {
+  .root {
+    --btn-w: 421px;
+    --btn-h: 72px;
+    --inner-w: 372px;
+  }
+
+  .body {
+    min-width: var(--inner-w-large);
+    max-width: var(--inner-w-large);
+  }
+
+  .surface {
+    min-width: var(--inner-w-large);
+    max-width: var(--inner-w-large);
+  }
+}
