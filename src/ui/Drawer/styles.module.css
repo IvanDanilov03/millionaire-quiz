@@ -1,0 +1,83 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 18, 28, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  z-index: 1300;
+}
+
+.drawer {
+  position: relative;
+  background: var(--white-100);
+  box-shadow: 0 32px 48px rgba(20, 46, 70, 0.25);
+  width: min(480px, 100%);
+  max-width: 100%;
+  border-radius: 32px;
+  min-height: auto;
+  max-height: calc(100vh - 64px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.anchor-right {
+  border-top-left-radius: 28px;
+  border-bottom-left-radius: 28px;
+}
+
+.anchor-left {
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 28px;
+  justify-self: flex-start;
+}
+
+.anchor-bottom {
+  align-self: flex-end;
+  justify-self: center;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  min-width: auto;
+  width: 100%;
+  max-width: none;
+  max-height: 80vh;
+}
+
+.anchor-top {
+  align-self: flex-start;
+  justify-self: center;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  min-width: auto;
+  width: 100%;
+  max-width: none;
+  max-height: 80vh;
+}
+
+.anchor-center {
+  align-self: center;
+  justify-self: center;
+  border-radius: 32px;
+  min-height: auto;
+  max-height: calc(100vh - 64px);
+}
+
+@media (min-width: 1024px) {
+  .backdrop {
+    justify-content: flex-end;
+    align-items: stretch;
+    padding: 0;
+  }
+
+  .drawer {
+    min-height: 100%;
+    min-width: 320px;
+    max-width: min(420px, 90vw);
+    border-radius: 0;
+  }
+}
