@@ -23,7 +23,7 @@ export const MoneyLadderGroup: FC<MoneyLadderGroupProps> = memo(
 
     return (
       <div className={classNames(styles.root, styles[variant])}>
-        <div
+        <ul
           className={classNames(
             styles.list,
             variant === 'mobile' && styles.listMobile,
@@ -37,7 +37,7 @@ export const MoneyLadderGroup: FC<MoneyLadderGroupProps> = memo(
               isCompleted={item.isCompleted}
             />
           ))}
-        </div>
+        </ul>
       </div>
     );
   },
