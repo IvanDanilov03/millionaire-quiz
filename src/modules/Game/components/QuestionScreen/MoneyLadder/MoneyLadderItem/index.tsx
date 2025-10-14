@@ -47,7 +47,6 @@ export const MoneyLadderItem: FC<MoneyLadderItemProps> = memo(
     return (
       <li
         className={classNames(styles.root, stateClass, className)}
-        role="listitem"
         aria-current={isCurrent ? 'true' : undefined}
         data-state={state}
       >
