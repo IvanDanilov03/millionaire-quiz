@@ -92,7 +92,11 @@
     "question": "In computing, what does 'HTTP' stand for?",
     "answers": [
       { "id": "a", "label": "HyperText Transfer Protocol", "isCorrect": true },
-      { "id": "b", "label": "HighText Transmission Program", "isCorrect": false },
+      {
+        "id": "b",
+        "label": "HighText Transmission Program",
+        "isCorrect": false
+      },
       { "id": "c", "label": "HyperText Tracking Process", "isCorrect": false },
       { "id": "d", "label": "High Transfer Text Protocol", "isCorrect": false }
     ],
@@ -125,9 +129,21 @@
     "question": "Which achievements are associated with NASA's Apollo program?",
     "answers": [
       { "id": "a", "label": "First crewed Moon landing", "isCorrect": true },
-      { "id": "b", "label": "Deployment of the Hubble Space Telescope", "isCorrect": false },
-      { "id": "c", "label": "Establishing the International Space Station", "isCorrect": false },
-      { "id": "d", "label": "Return of lunar rock samples to Earth", "isCorrect": true }
+      {
+        "id": "b",
+        "label": "Deployment of the Hubble Space Telescope",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "label": "Establishing the International Space Station",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "label": "Return of lunar rock samples to Earth",
+        "isCorrect": true
+      }
     ],
     "reward": 1000000
   }
