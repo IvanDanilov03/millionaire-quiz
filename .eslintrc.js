@@ -8,8 +8,6 @@ module.exports = {
     'plugin:promise/recommended',
     'plugin:unicorn/recommended',
     'plugin:prettier/recommended',
-    // TODO add next eslint
-    // https://nextjs.org/docs/basic-features/eslint#migrating-existing-config
   ],
   plugins: ['react', '@typescript-eslint', 'promise', 'unicorn', 'import'],
   env: {
