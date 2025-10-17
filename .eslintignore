@@ -1,5 +1,13 @@
 /node_modules
 package-lock.json
+/package.json
+
+/jest.config.js
+/.eslintrc.json
+tsconfig*.json
+tests/tsconfig.json
+
+/*.md
 
 /public
 /out

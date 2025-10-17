@@ -1,3 +1,6 @@
 {
-  "./**/*.{js,jsx,ts,tsx,json,css,scss,md}": ["prettier --write"]
+  "src/**/*.{ts,tsx,js,jsx}": ["eslint --max-warnings 0", "prettier --write"],
+  "tests/**/*.{ts,tsx,js,jsx}": ["eslint --max-warnings 0", "prettier --write"],
+  "./**/*.{cjs,mjs}": ["prettier --write"],
+  "./**/*.{json,css,scss,md}": ["prettier --write"]
 }
