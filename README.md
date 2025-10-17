@@ -40,7 +40,16 @@ Visit http://localhost:3000.
 
 ```bash
 npm run lint
+npm run test
 npm run build
+```
+
+Git hooks (via Husky) automatically run `eslint` on staged files during commits and execute `npm run test` before each push.
+
+After cloning, enable the hooks with:
+
+```bash
+git config core.hooksPath .husky
 ```
 
 ## Game configuration

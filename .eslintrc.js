@@ -17,7 +17,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
-    project: ['tsconfig.json', 'tsconfig.eslint.json'],
+    project: ['tsconfig.json', 'tsconfig.eslint.json', 'tsconfig.test.json'],
     tsconfigRootDir: __dirname,
   },
   rules: {
@@ -150,6 +150,24 @@ module.exports = {
       files: ['./src/pages/**/*.ts', './src/pages/**/*.tsx'],
       rules: {
         'import/no-default-export': 'off',
+      },
+    },
+    {
+      files: ['tests/**/*.{ts,tsx}'],
+      env: {
+        jest: true,
+        node: true,
+      },
+      rules: {
+        '@typescript-eslint/no-unsafe-call': 'off',
+        '@typescript-eslint/no-unsafe-assignment': 'off',
+        '@typescript-eslint/no-unsafe-return': 'off',
+        'import/no-extraneous-dependencies': [
+          'error',
+          {
+            devDependencies: true,
+          },
+        ],
       },
     },
   ],

@@ -25,6 +25,7 @@ export const ResultScreen: FC<ResultScreenProps> = ({ reward, onRestart }) => {
             alt="Thumbs up illustration"
             priority
             fill
+            sizes="(min-width: 1280px) 451px, (min-width: 744px) 320px, 196px"
             className={styles.image}
           />
         </div>

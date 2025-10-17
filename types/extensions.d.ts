@@ -9,3 +9,8 @@ declare module '*.png' {
   const source: StaticImageData;
   export default source;
 }
+
+declare module '*.module.css' {
+  const classes: Record<string, string>;
+  export default classes;
+}

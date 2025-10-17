@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "ES2019",
+    "jsx": "react-jsx",
+    "types": ["jest", "node", "testing-library__jest-dom"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowArbitraryExtensions": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true
+  },
+  "include": ["tests/**/*", "src/**/*", "types/**/*.d.ts"],
+  "exclude": ["node_modules", ".next", "public"]
+}
